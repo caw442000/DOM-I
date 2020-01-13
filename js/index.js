@@ -40,3 +40,39 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Update the nav links
+const links = document.getElementsByTagName("a")
+console.log(links)
+
+//Update the img src for Call To Action
+const ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src',siteContent["cta"]["img-src"])
+
+//Update the CTA Text
+
+//Update the CTA Button
+
+//Update Main Content - Feature
+
+
+//Update Main Content - About
+
+
+//Update Main Content - Middle Image
+
+
+//Update Main Content - Services
+
+
+//Update Main Content - Product
+
+
+//Update Main Content - Vision
+
+
+
+
+
+
+
