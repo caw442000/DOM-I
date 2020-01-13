@@ -120,14 +120,28 @@ middleImage.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 //Add Nav Items
 const firstNewLink = document.createElement("a");
 firstNewLink.textContent = "Home";
-
+//navLinks.push("firstNewLink");
+firstNewLink.setAttribute('href', '#');
+firstNewLink.style.color = "green"
 const lastNewLink = document.createElement("a");
 
+
+
 lastNewLink.textContent = "Gallery";
+
+lastNewLink.setAttribute('href', '#');
+lastNewLink.style.color="green"
+
 
 
 const parentElement = document.querySelector('nav');
 
-
+//add new links
 parentElement.prepend(firstNewLink)
-parentElement.append(lastNewLink)
+parentElement.appendChild(lastNewLink)
+
+//change color
+navLinks.forEach(element => {
+  element.style.color = "green"
+})
+
