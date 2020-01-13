@@ -117,7 +117,17 @@ middleImage.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 
 
 
+//Add Nav Items
+const firstNewLink = document.createElement("a");
+firstNewLink.textContent = "Home";
+
+const lastNewLink = document.createElement("a");
+
+lastNewLink.textContent = "Gallery";
 
 
+const parentElement = document.querySelector('nav');
 
 
+parentElement.prepend(firstNewLink)
+parentElement.append(lastNewLink)
