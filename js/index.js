@@ -42,24 +42,69 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Update the nav links
-const links = document.getElementsByTagName("a")
-console.log(links)
+
+const navLinks = document.querySelectorAll('a');
+navLinks[0].textContent = siteContent.nav['nav-item-1']
+navLinks[1].textContent = siteContent.nav['nav-item-2']
+navLinks[2].textContent = siteContent.nav['nav-item-3']
+navLinks[3].textContent = siteContent.nav['nav-item-4']
+navLinks[4].textContent = siteContent.nav['nav-item-5']
+navLinks[5].textContent = siteContent.nav['nav-item-6']
+console.log(navLinks)
 
 //Update the img src for Call To Action
 const ctaImage = document.getElementById("cta-img");
 ctaImage.setAttribute('src',siteContent["cta"]["img-src"])
 
 //Update the CTA Text
+const ctaText = document.querySelector("h1");
+ctaText.textContent = siteContent.cta['h1']
 
+//ctaText.setAttribute('textContent', siteContent["cta"]["h1"])
+
+console.log(ctaText)
 //Update the CTA Button
 
+const ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent.cta['button']
+
 //Update Main Content - Feature
+const allH4 = document.querySelectorAll("h4");
+allH4[0].textContent = siteContent['main-content']['features-h4']
+allH4[1].textContent = siteContent['main-content']['about-h4']
+allH4[2].textContent = siteContent['main-content']['services-h4']
+allH4[3].textContent = siteContent['main-content']['product-h4']
+allH4[4].textContent = siteContent['main-content']['vision-h4']
+allH4[5].textContent = siteContent['contact']['contact-h4']
+
+
+const allP  = document.querySelectorAll('p');
+
+allP[0].textContent = siteContent['main-content']['features-content']
+allP[1].textContent = siteContent['main-content']['about-content']
+allP[2].textContent = siteContent['main-content']['services-content']
+allP[3].textContent = siteContent['main-content']['product-content']
+allP[4].textContent = siteContent['main-content']['vision-content']
+
+allP[5].textContent = siteContent['contact']['address']
+allP[6].textContent = siteContent['contact']['phone']
+allP[7].textContent = siteContent['contact']['email']
+
+allP[8].textContent = siteContent['footer']['copyright']
+
+
+
+
+
+
 
 
 //Update Main Content - About
 
 
 //Update Main Content - Middle Image
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 
 
 //Update Main Content - Services
